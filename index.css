@@ -1,0 +1,482 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(238, 226, 122);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: chocolate;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: chocolate;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 120px;
+}
+
+#hero h1 {
+    /*Bienvenidos a Kuma*/
+    color: rgb(255, 115, 0);
+    font-style: italic;
+    text-shadow:
+        3px 3px 3px black,
+        0 0 3em rgb(255, 255, 255),
+        0 0 0.60em rgb(255, 255, 255);
+    letter-spacing: 5px;
+}
+
+#kuma .container {
+    padding: 150px 12px;
+    text-align: center;
+    background-image: linear-gradient(rgba(243, 185, 220, 0.712), rgb(250, 250, 160));
+}
+
+.somos {
+    /*Texto "Somos"*/
+    text-shadow:
+        3px 3px 3px #f56e00;
+}
+
+.color-kuma {
+    /*Texto "Kuma Rosario"*/
+    color: #f56e00;
+    text-shadow:
+        3px 3px 3px black;
+}
+
+#nuestro-trabajo {
+    /*Sección Nuestros trabajos*/
+    text-align: center;
+    background-image: linear-gradient(rgb(250, 250, 160), rgb(221, 221, 121));
+}
+
+#nuestro-trabajo .container {
+    padding: 70px 12px;
+}
+
+#nuestro-trabajo h2 {
+    margin-top: 20px;
+    font-size: 2.7em;
+    text-shadow:
+        3px 3px 3px #fd5d00;
+}
+
+#nuestro-trabajo h3 {
+    color: white;
+    text-shadow:
+        6px 6px 6px #000000;
+}
+
+#nuestro-trabajo .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("images/sublimaciones.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("images/impresiones.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("images/estampados.jpg");
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 80px 12px;
+    background-image: linear-gradient(rgb(221, 221, 121), rgba(236, 236, 157, 0.719));
+}
+
+#caracteristicas h2 {
+    margin-top: 0;
+    font-size: 2.7rem;
+    text-align: center;
+    text-shadow:
+        3px 3px 3px #fd5d00;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 100px 20px;
+    min-height: 70vh;
+    background-image: linear-gradient(rgba(236, 236, 157, 0.719), rgb(199, 199, 80));
+
+}
+
+#contacto h2 {
+    margin-top: 0;
+    font-size: 2.7em;
+    text-align: center;
+    text-shadow:
+        3px 3px 3px #fd5d00;
+}
+
+#contacto p {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+footer {
+    background-color: bisque;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: black;
+    font-weight: bold;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px) {
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+
+        z-index: 1000;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #kuma .container {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #kuma {
+        background-image: linear-gradient(rgba(248, 181, 221, 0.712), rgb(243, 243, 194));
+    }
+
+    #kuma .texto {
+        /*Texto "Nuestro compromiso es...*/
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-style: oblique;
+        font-size: 115%;
+        letter-spacing: 0.03em;
+    }
+
+    #kuma h2 {
+        margin-top: 0px;
+    }
+
+    #kuma .img-container {
+        flex: 1 1 400px;
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3/ 3;
+        background-image: url("images/somoskuma.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 30px;
+        border: 5px solid #ee9bcbb6;
+    }
+
+    #nuestro-trabajo .trabajos {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #nuestro-trabajo p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestro-trabajo h2 {
+        font-size: 2.7em;
+        color: #0c0c0cf8;
+        text-shadow:
+            5px 5px 5px #fd7a00;
+    }
+
+    #nuestro-trabajo h3 {
+        margin-top: 3.5rem;
+    }
+
+    #nuestro-trabajo .carta {
+        flex: 1 1 300px;
+        max-width: 350px;
+        background-color: rgb(117, 74, 34);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px rgba(255, 51, 0, 0.589);
+        color: white;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 350px;
+        cursor: default;
+    }
+
+    .carta:hover {
+        transform: scale(1.05);
+    }
+
+    .carta h3 {
+        margin-bottom: 1rem;
+        flex-shrink: 0;
+    }
+
+    .carta p {
+        flex-grow: 1;
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("images/sublimaciones.jpg");
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("images/impresiones.jpg");
+    }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("images/estampados.jpg");
+    }
+
+    #caracteristicas .container {
+        text-align: initial;
+        padding-bottom: 100px;
+    }
+
+    #contacto h2 {
+        font-size: 2.7em;
+        text-shadow:
+            3px 3px 3px #fd5d00;
+        padding-top: 80px;
+        margin-top: 0;
+    }
+
+    footer .container {
+        height: 50px;
+        justify-content: center;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+/*----------- GALERÍA GRID -----------*/
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 80px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 4px 15px rgba(255, 115, 0, 0.6);
+    z-index: 0;
+}
+
+/* Responsive para tablets */
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+}
+
+.redes-sociales {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.redes-sociales a {
+    color: #000;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes-sociales a.instagram:hover {
+    color: #e41a4c;
+    transform: scale(1.15);
+}
+
+.redes-sociales a.facebook:hover {
+    color: #084ad8;
+    transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+    .redes-sociales {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .redes-sociales a {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 849px) {
+    #nuestro-trabajo .carta p {
+        display: block;
+        margin-top: 1rem;
+        font-size: 1em;
+        color: white;
+        text-shadow: 2px 2px 3px black;
+        text-align: center;
+    }
+}
