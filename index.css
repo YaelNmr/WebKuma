@@ -92,11 +92,10 @@ header a:hover {
         3px 3px 3px black,
         0 0 3em rgb(255, 255, 255),
         0 0 0.60em rgb(255, 255, 255);
-    letter-spacing: 5px;
 }
 
 #kuma .container {
-    padding: 150px 12px;
+    padding: 100px 12px;
     text-align: center;
     background-image: linear-gradient(rgba(243, 185, 220, 0.712), rgb(250, 250, 160));
 }
@@ -165,7 +164,7 @@ header a:hover {
 
 #caracteristicas .container {
     text-align: center;
-    padding: 80px 12px;
+    padding: 70px 12px;
     background-image: linear-gradient(rgb(221, 221, 121), rgba(236, 236, 157, 0.719));
 }
 
@@ -184,7 +183,7 @@ header a:hover {
     align-items: center;
     text-align: center;
     color: black;
-    padding: 100px 20px;
+    padding: 75px 12px;
     min-height: 70vh;
     background-image: linear-gradient(rgba(236, 236, 157, 0.719), rgb(199, 199, 80));
 
@@ -362,7 +361,7 @@ footer .container {
 
     #caracteristicas .container {
         text-align: initial;
-        padding-bottom: 100px;
+        padding-bottom: 70px 12px;
     }
 
     #contacto h2 {
